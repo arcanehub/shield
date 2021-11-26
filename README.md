@@ -21,7 +21,7 @@ cd ./shield
 
 Then choose type of installation below:
 
-- [kool.dev (preferred)](#kool-devhttpskooldev)
+- [kool.dev (preferred)](#kool-dev)
 - [Manual](#manual)
 - [Docker](#docker)
 
