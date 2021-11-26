@@ -25,6 +25,7 @@ use Laravel\Sanctum\HasApiTokens;
  * @property-read Carbon|string|null $deleted_at
  *
  * @property-read Collection|QuestionCategory[] $questionCategories
+ * @property-read Collection|Question[] $questions
  */
 class User extends Authenticatable implements MustVerifyEmail
 {

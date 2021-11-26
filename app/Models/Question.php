@@ -19,6 +19,9 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property-read Carbon|string|null $created_at
  * @property-read Carbon|string|null $updated_at
  * @property-read Carbon|string|null $deleted_at
+ *
+ * @property-read User|null $creator
+ * @property-read QuestionCategory|null $category
  */
 class Question extends Model
 {
