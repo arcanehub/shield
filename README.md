@@ -94,3 +94,19 @@ docker exec shieldapp composer install
 docker exec shieldapp artisan key:generate
 docker exec shieldapp artisan migrate --seed
 ```
+
+## Copyright
+
+This project is distributed under [MIT license](https://github.com/arcanehub/shield/blob/main/LICENSE.md).
+
+### Made with
+
+<img src="https://www.php.net/images/logos/new-php-logo.svg" height="30" alt="PHP" />
+<img src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png" height="30" alt="Docker" />
+<img src="https://kool.dev/img/logo.png" height="24" alt="kool.dev" />
+<img src="https://www.postgresql.org/media/img/about/press/elephant.png" height="30" alt="PgSQL" />
+
+- [Docker License](https://www.docker.com/legal)
+- [Php License](https://www.php.net/license/index.php)
+- [kool.dev License](https://github.com/kool-dev/kool/blob/master/LICENSE.md)
+- [PgSQL License](https://www.postgresql.org/about/licence)
