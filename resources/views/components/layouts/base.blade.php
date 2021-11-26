@@ -14,8 +14,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
-<body class="antialiased">
-<x-slot />
+<body {{ $attributes->class('antialiased bg-gray-100') }}>
+{{ $slot }}
 
 <script defer src="{{ asset('js/app.js') }}"></script>
 </body>

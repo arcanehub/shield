@@ -7,8 +7,10 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
-            primary: colors.indigo,
-            gray: colors.blueGray,
+            colors: {
+                primary: colors.indigo,
+                gray: colors.blueGray,
+            }
         },
     },
     variants: {
