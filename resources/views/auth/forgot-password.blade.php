@@ -11,17 +11,20 @@
             </x-alert>
         @endif
 
-        <div class="mb-4 md:mb-6">
-            <x-controls.label required for="email">{{ __('Email') }}</x-controls.label>
-            <x-controls.input required value="{{ old('email', request('email')) }}" autofocus name="email" type="email" id="email" placeholder="{{ __('example@site.com') }}" />
-            <x-form.error for="email" />
-        </div>
+        <x-form action="{{ route('password.email') }}" method="post">
+            <div class="mb-4 md:mb-6">
+                <x-controls.label required for="email">{{ __('Email') }}</x-controls.label>
+                <x-controls.input required value="{{ old('email', request('email')) }}" autofocus name="email" type="email" id="email" placeholder="{{ __('example@site.com') }}" />
+                <x-form.error for="email" />
+            </div>
 
-        <div class="flex justify-end">
-            <x-btn class="bg-primary-500 text-white focus:bg-primary-700 hover:bg-primary-600 w-full md:w-auto mb-2 md:mb-0">
-                {{ __('Send reset link') }}
-            </x-btn>
-        </div>
+            <div class="flex justify-end">
+                <x-btn class="bg-primary-500 text-white focus:bg-primary-700 hover:bg-primary-600 w-full md:w-auto mb-2 md:mb-0">
+                    {{ __('Send reset link') }}
+                </x-btn>
+            </div>
+        </x-form>
+
     </x-auth.card>
 
 </x-layouts.auth>

@@ -20,7 +20,7 @@
             </div>
 
             <div class="flex flex-col flex-col-reverse md:flex-row items-center justify-between">
-                <x-btn href="{{ route('password.email') }}" class="bg-transparent text-gray-400 hover:bg-gray-200 hover:text-black w-full md:w-auto">
+                <x-btn href="{{ route('password.email') }}" class="bg-transparent text-gray-400 hover:bg-gray-100 focus:bg-gray-200 focus:text-black hover:text-black w-full md:w-auto">
                     {{ __('Forgot password?') }}
                 </x-btn>
 
