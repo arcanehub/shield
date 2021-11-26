@@ -5,6 +5,8 @@ namespace App\Models;
 use App\Concerns\Eloquent\UuidPrimaryKey;
 use Carbon\Carbon;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -21,6 +23,8 @@ use Laravel\Sanctum\HasApiTokens;
  * @property-read Carbon|string|null $created_at
  * @property-read Carbon|string|null $updated_at
  * @property-read Carbon|string|null $deleted_at
+ *
+ * @property-read Collection|QuestionCategory[] $questionCategories
  */
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -40,4 +44,10 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function questionCategories(): HasMany
+    {
+        return $this->hasMany(QuestionCategory::class, 'creator_id');
+    }
+
 }
