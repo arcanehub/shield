@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Concerns\Eloquent\UuidPrimaryKey;
+use App\Enums\UserRole;
 use Carbon\Carbon;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Collection;
@@ -14,6 +15,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 /**
  * @property-read string $id
+ * @property UserRole $role
  * @property string $name
  * @property string $mail
  * @property string $password
@@ -44,6 +46,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     protected $casts = [
         'email_verified_at' => 'datetime',
+        'role' => UserRole::class,
     ];
 
     public function questionCategories(): HasMany
