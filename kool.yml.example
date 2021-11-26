@@ -1,0 +1,13 @@
+scripts:
+  artisan: kool exec app php artisan
+  composer: kool exec app composer
+  phpunit: kool exec app php ./bin/phpunit
+  psql: kool exec -e PGPASSWORD=$DB_PASSWORD database psql -U $DB_USERNAME $DB_DATABASE
+  reset:
+  - kool run composer install
+  - kool run artisan migrate:fresh --seed
+  setup:
+  - cp .env.example .env
+  - kool start
+  - kool run composer install
+  - kool run artisan key:generate
