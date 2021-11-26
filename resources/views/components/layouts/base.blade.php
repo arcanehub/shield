@@ -3,7 +3,6 @@
 <?php
     $title = array_filter(is_array($title) ? $title : [$title]);
 ?>
-
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>

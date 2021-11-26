@@ -105,8 +105,10 @@ This project is distributed under [MIT license](https://github.com/arcanehub/shi
 <img src="https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png" height="30" alt="Docker" />
 <img src="https://kool.dev/img/logo.png" height="24" alt="kool.dev" />
 <img src="https://www.postgresql.org/media/img/about/press/elephant.png" height="30" alt="PgSQL" />
+<img src="https://tailwindcss.com/_next/static/media/tailwindcss-logotype.128b6e12eb85d013bc9f80a917f57efe.svg" height="20" alt="PgSQL" />
 
 - [Docker License](https://www.docker.com/legal)
 - [Php License](https://www.php.net/license/index.php)
 - [kool.dev License](https://github.com/kool-dev/kool/blob/master/LICENSE.md)
 - [PgSQL License](https://www.postgresql.org/about/licence)
+- [Tailwind License](https://github.com/tailwindlabs/tailwindcss/blob/master/LICENSE)
